@@ -7,20 +7,11 @@
 #include <iostream>
 #include "twitchIRC.hpp"
 #include "yaml-cpp/yaml.h"
-#include "./include/helper/config.hpp"
 #include <string>
 
 int main()
 {
-
-    std::string configPath = "config.yaml";
-    config myconfig = config(configPath);
-
-    std::cout << "channel" << myconfig.getChannel() << "\r\n";
-    std::cout << "user" << myconfig.getUser() << "\r\n";
-    std::cout << "Server" << myconfig.getServer() << "\r\n";
-    std::cout << "ServerPort" << myconfig.getServerPort() << "\r\n";
-    std::cout << "Password" << myconfig.getPassword() << "\r\n";
+    twitchIRC IRC = twitchIRC();
 
     return 0;
 }
