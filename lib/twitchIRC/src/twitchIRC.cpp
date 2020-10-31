@@ -17,12 +17,13 @@ twitchIRC::twitchIRC()
     IRCconfig.readConfig(configPath);
 
     std::cout << "[twitchIRC] init twitchIRC with the following configs" << "\r\n";
+    std::cout << "\r\n";
 
-    std::cout << "channel" << IRCconfig.getChannel() << "\r\n";
-    std::cout << "user" << IRCconfig.getUser() << "\r\n";
-    std::cout << "Server" << IRCconfig.getServer() << "\r\n";
-    std::cout << "ServerPort" << IRCconfig.getServerPort() << "\r\n";
-    std::cout << "Password" << IRCconfig.getPassword() << "\r\n";
+    std::cout << "channel: " << IRCconfig.getChannel() << "\r\n";
+    std::cout << "user: " << IRCconfig.getUser() << "\r\n";
+    std::cout << "Server: " << IRCconfig.getServer() << "\r\n";
+    std::cout << "ServerPort: " << IRCconfig.getServerPort() << "\r\n";
+    std::cout << "Password: " << IRCconfig.getPassword() << "\r\n";
 
 }
 
