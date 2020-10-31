@@ -13,9 +13,11 @@ PhantomBotLog.txt
 Release/PhantomBot.ipdb
 *.dev
 
-botconfig.txt
+config.yaml
 .ccls*
 build/
+bin
+.clangd
 
 # Created by https://www.toptal.com/developers/gitignore/api/vim,c++,cmake
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,c++,cmake
