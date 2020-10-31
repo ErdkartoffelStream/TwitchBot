@@ -12,7 +12,7 @@
 class twitchIRC
 {
     public:
-        twitchIRC ();
+        twitchIRC();
         virtual ~twitchIRC ();
     private:
         /* private data */

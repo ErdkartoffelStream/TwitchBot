@@ -9,15 +9,19 @@ project(twitchIRC)
 
 set(CMAKE_BUILD_TYPE Debug)
 
-set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpthread -Wall -Werror -std=c++17")
+add_compile_options(-lpthread -Wall)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 11)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+add_subdirectory(lib)
+# target_include_directories(include)
 
-add_library(twitchIRC SHARED
+add_library(twitchIRC STATIC
     src/twitchIRC.cpp
+    src/helper/config.cpp
 )
 
-# add_executable(timesort2 src/timesort.cpp)
+target_link_libraries(twitchIRC yaml-cpp)
 
 target_include_directories(twitchIRC PUBLIC include)
 

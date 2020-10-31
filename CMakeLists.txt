@@ -7,12 +7,12 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_BUILD_TYPE Release)
 
-add_subdirectory(lib/twitchIRC)
-add_subdirectory(lib/yaml-cpp)
+add_subdirectory(lib)
 
-add_executable (KartwitchBot main.cpp src/helper/config.cpp)
+add_executable (KartwitchBot
+    main.cpp)
 
-target_link_libraries(KartwitchBot twitchIRC yaml-cpp)
+target_link_libraries(KartwitchBot twitchIRC)
 
 # moves the new compile_commands.json file from build folder to the project source
 add_custom_command(TARGET KartwitchBot POST_BUILD

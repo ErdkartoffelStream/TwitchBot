@@ -8,10 +8,10 @@
 #include "yaml-cpp/yaml.h"
 #include <iostream>
 
-// config::config()
-// {
-//
-// }
+config::config()
+{
+
+}
 
 config::config(std::string configPath)
 {

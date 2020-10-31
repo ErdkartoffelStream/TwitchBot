@@ -13,9 +13,9 @@
 class config
 {
     public:
-        config (std::string configPath);
-        // config ();
-        virtual ~config ();
+        config(std::string configPath);
+        config();
+        virtual ~config();
         /**
          * Reads the config from the parameter configPath
          **/
