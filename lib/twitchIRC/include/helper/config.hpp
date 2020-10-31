@@ -8,6 +8,7 @@
 
 #define CONFIG_HPP
 
+#include "yaml-cpp/yaml.h"
 #include <string>
 
 class config
@@ -32,6 +33,12 @@ class config
         std::string server;
         std::string serverPort;
         std::string channel;
+
+        void readUserFromConfigFile(YAML::Node);
+        void readPasswordFromConfigFile(YAML::Node);
+        void readChannelFromConfigFile(YAML::Node);
+        void readServerFromConfigFile(YAML::Node);
+        void readServerPortFromConfigFile(YAML::Node);
 };
 
 #endif /* end of include guard CONFIG_HPP */
