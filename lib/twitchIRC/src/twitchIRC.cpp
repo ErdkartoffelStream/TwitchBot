@@ -12,7 +12,7 @@
 twitchIRC::twitchIRC()
 {
     const std::string configPath = "config.yaml";
-    config IRCconfig = config(configPath);
+    config IRCconfig = config();
     // config IRCconfig = config();
     IRCconfig.readConfig(configPath);
 
