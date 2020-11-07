@@ -1,9 +1,3 @@
-[submodule "lib/yaml-cpp"]
-	path = lib/yaml-cpp
-	url = git@github.com:jbeder/yaml-cpp.git
-[submodule "lib/twitchIRC/lib/yaml-cpp"]
-	path = lib/twitchIRC/lib/yaml-cpp
-	url = git@github.com:jbeder/yaml-cpp.git
-[submodule "lib/twitchIRC/lib/googletest"]
-	path = lib/twitchIRC/lib/googletest
-	url = git@github.com:google/googletest.git
+[submodule "lib/TwitchIRC"]
+	path = lib/TwitchIRC
+	url = git@github.com:ErdkartoffelStream/TwitchIRC.git
