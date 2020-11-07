@@ -5,4 +5,7 @@
 ######################################################################
 
 add_subdirectory(yaml-cpp)
-add_subdirectory(googletest)
+
+if(TESTS)
+    add_subdirectory(googletest)
+endif()
