@@ -4,7 +4,7 @@
  * @created     : Sunday Oct 25, 2020 19:20:16 CET
  */
 
-#include "../../include/helper/config.hpp"
+#include "helper/config.hpp"
 #include <iostream>
 
 config::config()
