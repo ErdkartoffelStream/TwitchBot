@@ -26,6 +26,7 @@ target_link_libraries(twitchIRC yaml-cpp)
 target_include_directories(twitchIRC PUBLIC include)
 
 if(TESTS)
+    include(CTest)
     add_subdirectory(tests)
 
     add_custom_command(TARGET twitchIRC POST_BUILD
